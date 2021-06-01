@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="26" viewBox="0 0 40 26">
+  <defs>
+    <clipPath id="clip-konsept">
+      <rect width="40" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="konsept" clip-path="url(#clip-konsept)">
+    <path id="Path_95" data-name="Path 95" d="M14798.074,7562.873h8.163" transform="translate(-14782 -7543)" fill="none" stroke="#343434" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_96" data-name="Path 96" d="M14798.074,7562.873h6.687" transform="translate(-14781.293 -7541)" fill="none" stroke="#343434" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_97" data-name="Path 97" d="M14798.075,7562.873h5.073" transform="translate(-14780.587 -7539)" fill="none" stroke="#343434" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_99" data-name="Path 99" d="M14799.781,7562.956h6.5s4.794-6.208,4.013-10.44a7.915,7.915,0,0,0-7.139-6.487c-2.606-.053-6.412,2.255-7.255,6.487S14799.781,7562.956,14799.781,7562.956Z" transform="translate(-14783 -7545)" fill="none" stroke="#343434" stroke-width="1.5"/>
+    <path id="Path_100" data-name="Path 100" d="M14801.157,7560.585s.076-7.068,0-7.783a1.2,1.2,0,0,0-1.5-.928c-.666.135-1.715,1.1-.159,1.47a13.262,13.262,0,0,0,5.381,0c1.53-.368.41-1.334-.26-1.47a1.114,1.114,0,0,0-1.419.928c-.227.817,0,7.783,0,7.783" transform="translate(-14782 -7543.909)" fill="none" stroke="#343434" stroke-linecap="round" stroke-width="0.7"/>
+  </g>
+</svg>

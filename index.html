@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninis portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kes8ydz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kes8ydz.css">
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+     <script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+     <script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+     <script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
+     <script defer src="//cdn.jsdelivr.net/npm/flamelink@1.0.0-alpha.34/flamelink.js"></script>
+ 
+ 
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li id="nini"><a href="#top">Nini Sophie Granrud</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top" class="flexbox">
+            <div class="infoblokk">
+                <h1>HEI FOLKENS!</h1>
+                    <p id="intro">Jeg er Nini Sophie Granrud, en nyutdannet interaksjonsdesigner fra Oslo som også har bachelor i grafisk design. Å jobbe med gode brukeropplevelser med et godt design er noe jeg brenner for, og digger å stupe inn i nye prosjekter. Som du kanskje har merket er jeg glad i design og UX/UI, men er likeså glad i tegning, dans, trening og en god gåtur. Eller bare en trivelig samtale på norsk, engelsk eller basic tysk eller koreansk?
+                    </p>
+                <h3 id="ferdigheter">Ferdigheter</h3>
+                    <div class="progressbar-containter">
+                        <div class="progressamler">
+                            <img class="icon" alt="Smileyikon" src="./img/hyggelige@2x.png">
+                            <div class="text">Hyggelig</div>
+                        </div>
+                            <div class="progressbar">
+                                <div class="progess progress-hyggelig"></div>
+                            </div>
+                    </div>
+
+                        <div class="progressbar-containter">
+                            <div class="progressamler">
+                                <img class="icon" alt="Pc og mobil ikon" src="./img/uxui1@2x.png">
+                                <div class="text">UX/UI</div>
+                            </div>
+                                <div class="progressbar">
+                                    <div class="progess progress-uxui"></div>
+                                </div>
+                        </div>
+
+                        <div class="progressbar-containter">
+                            <div class="progressamler">
+                                <img class="icon" alt="Grafisk design ikon" src="./img/grafiske.png">
+                                <div class="text">Grafisk design</div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progess progress-grafisk"></div>
+                            </div>
+                        </div>
+
+                        <div class="progressbar-containter">
+                            <div class="progressamler">
+                                <img class="icon" alt="Lyspæreikon" src="./img/konseptet@2x.png">
+                                <div class="text">Konsepter</div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progess progress-prototyp"></div>
+                            </div>
+                        </div>
+
+                        <div class="progressbar-containter">
+                            <div class="progressamler">
+                                <img class="icon" alt="html og css ikon" src="./img/htmlcsss@2x.png">
+                                <div class="text">HTML/CSS</div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progess progress-htmlcss"></div>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+                <img id="meg" src="./img/niniportrett.jpg" alt="Portrett av Nini" srcset="">
+        </section>
+
+        <section id="portfolio">
+            <h2 id="porttittel">PORTFOLIO</h2>
+                <div class="promappe" id="portfolioinnhold">
+                    <div class="prosjekt" class="imgfirst">
+                        <img class="prosjektimg" src="./img/gibenmarg.jpg" alt="Gibenmarg.no" srcset="">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Gibenmarg.no</h3>
+                                <p class="fagfelt">Kampanje • Frontend • UX • UI</p>
+                        </div>
+                    </div>
+
+                    <div class="prosjekt" class="textfirst">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Portraits & Landscapes</h3>
+                                <p class="fagfelt">Prototyping • Konsept • UX • UI</p>
+                        </div>
+                        <img class="prosjektimg" src="./img/plikonbilde2.jpg" alt="Portraits & Landscapes" srcset="">
+                    </div>
+
+                    <div class="prosjekt" class="imgfirst">
+                        <img class="prosjektimg" src="./img/aapenhet.jpg" alt="Åpenhet" srcset="">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Åpenhet Rapport - Serbia</h3>
+                                <p class="fagfelt">Prototyping • UX • UI</p>
+                        </div>
+                    </div>
+
+                    <div class="prosjekt" class="textfirst">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">OsLocal</h3>
+                                <p class="fagfelt">App • Prototyping • UX • UI</p>
+                        </div>
+                        <img class="prosjektimg" src="./img/oslocal.jpg" alt="OsLocal" srcset="">
+                    </div>
+
+                    <div class="prosjekt" class="imgfirst">
+                        <img class="prosjektimg" src="./img/fontside.jpg" alt="Fontnettside" srcset="">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Fontnettside</h3>
+                                <p class="fagfelt">Frontend • UX • UI • Typografi</p>
+                        </div>
+                    </div>
+
+                    <div class="prosjekt" class="imgfirst">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Snylt - O - Meter</h3>
+                                <p class="fagfelt">Brettspill • UX • UI • Prototyping • Illustrasjon</p>
+                        </div>
+                        <img class="prosjektimg" src="./img/snylto.jpg" alt="Snylt - O - Meter" srcset="">
+                    </div>
+
+                    <div class="prosjekt" class="textfirst">
+                        <img class="prosjektimg" src="./img/aftenpostenapp.jpg" alt="Aftenposten app" srcset="">
+                        <div class="protext">
+                            <h3 class="prosjekttittel">Aftenposten app</h3>
+                        <p class="fagfelt">App • Prototyping • UX • UI</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="CV">
+            <h2 class="curvit">CURRICULUM VITAE</h2>
+            <div class="cvdetaljer">
+                <div class="listen">
+                    <h3 class="erfaring">Utdanning</h3>
+                        <ul class="skolerarbeid">
+                        <div class="delito">
+                            <div class="firstbolk">
+                                <li><span>Fagskolen Kristiania</span><br>
+                                    Interaksjonsdesign<br>
+                                    2019 - 2021
+                                </li><br><br>
+                                <li><span>Teesside University</span><br>
+                                    Bachelor Graphic Design<br>
+                                    2017 - 2018
+                                </li><br><br>
+                                <li><span>Noroff Fagskole</span><br>
+                                    Grafisk Design<br>
+                                    2015 - 2017
+                                </li><br>
+                            </div>
+                            <div class="secondbolk">
+                                <li><span>Sandefjord Folkehøgskole</span><br>
+                                    Tegning, maling og kunstreise<br>
+                                    2014 - 2015
+                                </li><br><br>
+                                <li><span>Fyrstikkalléen Skole</span><br>
+                                    Medier & Kommunikasjon<br>
+                                    2011- 2014
+                                </li>
+                            </div>
+                        </div>
+                        </ul>
+                </div>
+
+                <div class="listen">
+                    <h3 class="erfaring">Arbeidserfaring</h3>
+                        <ul class="skolerarbeid">
+                        <div class="delito">
+                            <div class="firstbolk">
+                                <li><span>Nyhetsgrafikk.no - NTB</span><br>
+                                    Sommerjobb og vikariater<br>
+                                    2017 - 2018 - 2019
+                                </li><br><br>
+                                <li><span>Nøtteliten Familiebarnehage</span><br>
+                                    Ringevikar<br>
+                                    2018 - 2019
+                                </li><br><br>
+                                <li><span>Barnehageressursen</span><br>
+                                    Ringevikar<br>
+                                    2018 - 2019
+                                </li><br>
+                            </div>
+                            <div class="secondbolk">
+                                <li><span>Over Oslo festivalen</span><br>
+                                    Frivillig<br>
+                                    2015
+                                </li><br><br>
+                                <li><span>Slottsfjellfestivalen</span><br>
+                                    Frivillig<br>
+                                    2014
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section id="kontakt" class="flexbox">
+            <h3 id="kontaktittel">Kontakt og grafiske arbeider</h3>
+            <div class="some">
+                <a href="mailto:nini.g94@gmail.com?subject=Mail fra portefølje-nettside"><img class="linker" id="Behance_black" src="img/epost.svg"></a>
+                <a href="https://www.behance.net/NiniGranrud" target="_blank">
+                    <img class="linker" id="Behance_black" src="./img/bechance.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/nini-granrud-a01152161/" target="_blank">
+                    <img class="linker" id="LinkedIN_black" src="./img/linkedin.svg">
+                </a>
+            </div>
+                                    
+        </section>
+    </main>
+
+    <footer>
+        <div class="strek"></div>
+        <h4>Kodet av og designet av <span>Nini Sophie Granrud</span> © 2021</h4>
+    </footer>
+    
+    <script defer src="./main.js"></script>
+</body>
+</html>

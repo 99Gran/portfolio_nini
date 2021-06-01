@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Futura-PT';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 4px 18px rgba(172, 172, 172, 0.095);
+    background-color: #FAFAFA;
+    text-decoration: none;
+}
+
+.menu {
+    font-weight: 400;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #343434;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    transform: scale(1.1);
+    color: #7BAF76;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu li:first-child {
+    float: left;
+    padding-left: 3rem;
+} 
+
+.menu li:nth-child(n+2){
+    float: right;
+    padding: 0 3rem;
+}
+
+#nini {
+    font-size: 1.4rem;
+}
+
+.top-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    color: #343434;
+    padding-left: 5vw;
+}
+
+#fargeboks {
+    z-index: -5;
+    /* background-size: cover;
+    background-position: center center; */
+    min-width: 100vw;
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+#tittel {
+    border-bottom: 2px solid #fff;;
+    display: inline-block;
+    width: 50%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.ingress {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 30vw;
+    margin: 20px 0 30px 0;
+    color: #fff;
+}
+
+.forside {
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+#ferdighet {
+    float: right;
+    justify-content: right;
+    font-weight: 500;
+    color: #fff;
+}
+
+#brodtekst {
+    font-family: 'Rockwell';
+    width: 75vw;
+    color: #fff;
+}
+
+#prosjekteier {
+    margin-top: 60px;
+    color: #fff;
+}
+
+button {
+    font-family: 'Futura-PT';
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 500;
+    padding: 20px 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: .9rem;
+    border-style: none;
+    margin: 50px 0 15px 0; 
+    border: solid 1px #fff
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #34343436;
+    transition: all .4s ease-in-out;
+}
+
+.bilder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bilder img {
+    width: 70vw;
+    object-fit: cover;
+    object-fit: fill;
+    margin: 50px 0;
+}
+
+.video {
+    display: flex;
+    min-width: 60vw;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+/******** Footer *********/
+
+.strek {
+    height: 1px;
+    background-color: #707070;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+h4 {
+    color: #343434;
+    font-weight: 100;
+    text-align: center;
+    padding: 55px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+    .ingress {
+        width: 55vw;
+    }
+
+    .bilder img {
+        max-width: 80vw;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+        min-width: 90vw;
+    }
+
+    .ingress {
+        width: 50vw;
+    }
+
+    .bilder img {
+        max-width: 80vw;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu li:nth-child(n+2) {
+        display: none;
+    }
+
+    h1 {
+        min-width: 90vw;
+    }
+
+    .bilder img {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu li:first-child {
+        padding-left: 1rem;
+    } 
+
+    .menu li:nth-child(n+2) {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        width: 90vw;
+    }
+
+    .ingress {
+        font-size: 1.3rem;
+        width: 80vw;
+        margin: 20px 0;
+    }
+
+    .video {
+        width: 10px;
+    }
+
+    #brodtekst {
+        width: 80vw;
+    }
+
+    h4 {
+        font-size: .8rem;
+    }
+}

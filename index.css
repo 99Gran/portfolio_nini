@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Futura-PT';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 4px 18px rgba(172, 172, 172, 0.095);
+    background-color: #FAFAFA;
+    text-decoration: none;
+}
+
+.menu {
+    font-weight: 400;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #343434;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    transform: scale(1.1);
+    color: #7BAF76;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu li:first-child {
+    float: left;
+    padding-left: 3rem;
+} 
+
+.menu li:nth-child(n+2){
+    float: right;
+    padding: 0 3rem;
+}
+
+#nini {
+    font-size: 1.4rem;
+}
+
+.flexbox {
+    display: flex;
+    max-width: 90vw;
+    min-height: 100vh;
+    margin: auto;
+}
+
+/*********** Siden om meg **********/
+
+#top h1 {
+    font-size: 5rem;
+    color: #343434;
+}
+
+#top {
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+img#meg {
+    border-radius: 50%;
+    max-width: 40vw;
+    max-height: 35vw;
+    margin: 65px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 5rem;
+    padding: 15vh 0 0 5vw;
+    color: #343434;
+}
+
+h3#ferdigheter {
+    margin: 40px 0;
+    color: #343434;
+}
+
+#intro {
+    font-family: 'Rockwell';
+    max-width: 40vw;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-left: 0;
+    color: #343434;
+}
+
+.progressbar {
+    width: 100%;
+    height: 16px;
+    background-color: #DAD7CD;
+    border-radius: 2px;
+    margin: 10px 0 10px 0px;
+    align-items: left;
+    justify-content: left;
+}
+
+.progess {
+    background-color: #60A459;
+    width: 50%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.progressbar-containter {
+    display: flex;
+    align-items: center;
+}
+
+.progress-hyggelig {
+    width: 100%;
+}
+
+.progress-uxui {
+    width: 95%;
+}
+
+.progress-grafisk {
+    width: 95%;
+}
+
+.progress-prototyp {
+    width: 90%;
+}
+
+.progress-htmlcss {
+    width: 50%;
+}
+
+.progressamler {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    margin: 5px;
+    justify-content: right;
+}
+
+.icon {
+    max-width: 40px;
+    max-height: 25px;
+    align-items: left;
+}
+
+.text {
+    font-weight: 700;
+    margin: 10px;
+    text-align: left;
+}
+
+/********* Portfolio **********/
+
+#portfolio {
+    justify-content: center;
+    align-content: center;
+}
+
+.prosjekt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.protext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.protext:hover {
+    transform: scale(1.1);
+}
+
+#porttittel {
+    text-align: left;
+}
+
+.prosjekttittel {
+    color: #343434;
+    font-size: 3rem;
+    margin: 0 200px;
+}
+
+.fagfelt {
+    color: #343434;
+    font-size: 1.2rem;
+}
+
+.prosjektlink {
+    text-decoration: none;
+}
+
+.prosjektimg {
+    width: 40vw;
+    justify-content: center;
+    margin: 0 100px;
+    transition: .5s;
+}
+
+.prosjektimg:hover, .prosjektimg:focus {
+    transition: scale(1.2);
+} 
+
+.textfirst {
+    display: flex;
+}
+
+/************* CV *************/
+
+#CV {
+    background-color: #7BAF76;
+    max-width: 100vw;
+    min-height: 100vh;
+    text-align: center
+}
+
+.curvit {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cvdetaljer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 5vw;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.listen {
+    flex: 1;
+    text-align: left;
+}
+
+.erfaring {
+    color: #fff;
+    font-size: 1.5rem;
+    align-items: left;
+    justify-content: left;
+}
+
+.skolerarbeid {
+    list-style: none;
+    display: flex;
+    color: #fff;
+    font-family: 'Rockwell';
+    padding: 0;
+}
+
+.delito {
+    display: flex;
+    margin-top: 70px;
+}
+
+.firstbolk {
+    margin-right: 70px;
+}
+
+button:hover {
+    background-color: #255329;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+/************ Kontakt **************/
+
+#kontakt {
+    flex-direction: column;
+}
+
+#kontaktittel {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    color: #343434;
+    margin: 200px 0 100px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.linker {
+    transition: all .4s ease;
+    margin: 50px;
+}
+
+.some {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#Behance_black:hover {
+    transform: scale(1.1);
+}
+
+#LinkedIN_black:hover {
+    transform: scale(1.1);
+}
+
+#Gmail_black:hover {
+    transform: scale(1.1);
+}
+
+
+/******** Footer *********/
+
+.strek {
+    height: 1px;
+    background-color: #707070;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+h4 {
+    color: #343434;
+    font-weight: 100;
+    text-align: center;
+    padding: 55px 0;
+}
+
+/******** RESPONSIV *********/
+
+@media (max-width: 1300px) {
+    img#meg {
+        margin-top: 105px;
+    }
+}
+
+@media (max-width: 1100px) {
+    img#meg {
+        margin-top: 105px;
+    }
+
+    .secondbolk {
+        margin-right: 30px;
+    }
+
+    .prosjekttittel {
+        margin: 0 80px;
+    }
+}
+
+@media (max-width: 900px) {
+    .flexbox {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 4rem;
+        width: 55vw;;
+        margin-right: 20px;
+    }
+
+    h1, p#intro {
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    #intro {
+        max-width: 80vw;
+    }
+
+    img#meg {
+        min-width: 70vw;
+        min-height: 65vw;
+        margin-right: 0;
+        margin-left: 80px;
+    }
+
+    .progressbar-containter {
+        width: 90vw;
+    }
+
+    .textfirst:nth-child(odd) { 
+        flex-direction: column-reverse;
+    }
+
+    .prosjekt {
+        flex-direction: column;
+    }
+
+    .prosjektimg {
+        width: 70vw;
+    }
+
+    .prosjekttittel {
+        margin: 0 100px;
+        font-size: 2rem;
+    }
+
+    .secondbolk {
+        margin-right: 100px;
+    }
+
+    .listen {
+        margin-bottom: 50px;
+    }
+
+    #kontaktittel {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu li:nth-child(n+2) {
+        display: none;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+
+    h1 {
+        min-width: 70vw;;
+    }
+
+    h2 {
+        padding-top: 40px;
+    }
+
+    #intro {
+        max-width: 80vw;
+    }
+
+    .progressbar-containter {
+        width: 90vw;
+    }
+
+    img#meg {
+        margin: 50px 0 0 100px;
+    }
+
+    .prosjekt {
+        flex-direction: column;
+    }
+
+    .listen {
+        margin-bottom: 0;
+    }
+
+    .delito {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .menu li:first-child {
+        padding-left: 1rem;
+    } 
+
+    .menu li:nth-child(n+2) {
+        display: none;
+    }
+
+    #top h1 {
+        font-size: 3rem;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+
+    #top {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #intro {
+        max-width: 80vw;
+    }
+
+    img#meg {
+        min-width: 80vw;
+        max-height: 80vw;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .progressbar-containter {
+        width: 90vw;
+    }
+
+    h2 {
+        padding-top: 50px;
+        font-size: 3rem;
+    }
+
+    .prosjekt {
+        flex-direction: column;
+    }
+
+    .prosjektimg {
+        width: 85vw;
+    }
+
+    .prosjekttittel {
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+
+    .fagfelt {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .prosjekt .textfirst {
+        flex-direction: column-reverse;
+    }
+    
+    .cvdetaljer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .erfaring {
+        margin: 60px 0 0 0;
+        text-align: center;
+    }
+
+    .delito {
+        flex-direction: column;
+        width: 50vw;
+        text-align: center;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstbolk, .secondbolk {
+        margin-right: 0;
+    }
+
+    .secondbolk {
+        margin-top: 10px;
+    }
+
+    .some {
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: .8rem;
+    }
+}
